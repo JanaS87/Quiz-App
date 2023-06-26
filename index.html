@@ -18,7 +18,7 @@
 
     <main>
       <section class="card">
-        <h2 class="card-question">For what stands CSS?</h2>
+        <h2 id="Q1" class="card-question">For what stands CSS?</h2>
         <button class="bookmark"><i class="fa-solid fa-bookmark"></i></button>
         <div class="card-answer">
           <button>Show Answer</button>
@@ -33,7 +33,7 @@
       </section>
 
       <section class="card">
-        <h2 class="card-question">For what stands HTML?</h2>
+        <h2 id="Q2" class="card-question">For what stands HTML?</h2>
         <button class="bookmark"><i class="fa-solid fa-bookmark"></i></button>
         <div class="card-answer">
           <button>Show Answer</button>
@@ -47,8 +47,7 @@
       </section>
 
       <section class="card">
-        <h2 class="card-question">What is GitHub?</h2>
-
+        <h2 id="Q3" class="card-question">What is GitHub?</h2>
         <button class="bookmark"><i class="fa-solid fa-bookmark"></i></button>
         <div class="card-answer">
           <button>Show Answer</button>
@@ -65,7 +64,9 @@
       </section>
 
       <section class="card">
-        <h2 class="card-question">What property flips the axes in flexbox?</h2>
+        <h2 id="Q4" class="card-question">
+          What property flips the axes in flexbox?
+        </h2>
         <button class="bookmark"><i class="fa-solid fa-bookmark"></i></button>
         <div class="card-answer">
           <button>Show Answer</button>
@@ -81,9 +82,17 @@
       </section>
 
       <div class="navbar">
-        <a class="active" href="#Home"><i class="fa fa-home"></i></a>
-        <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <ul class="navbar-item">
+          <li class="navbar-link-item">
+            <a class="active" href="#Home"><i class="fa fa-home"></i></a>
+          </li>
+          <li>
+            <a href="./bookmarks.html"><i class="fa-solid fa-bookmark"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
       </div>
     </main>
   </body>
