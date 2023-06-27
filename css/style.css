@@ -10,6 +10,11 @@ body {
   background-color: #faf0e4;
 }
 
+body.dark {
+  background-color: rgb(50, 51, 58);
+  color: white;
+}
+
 .header {
   background-color: #176b87;
   top: 0;
@@ -102,20 +107,19 @@ h1 {
 .about {
   display: flex;
   flex-direction: column;
+  margin: 10%;
 }
 
 .about h3 {
   text-align: left;
+  padding-bottom: 2%;
 }
-
-/* ka hier komm ich grad nicht weiter, sieht halt alles scheiße aus
-.about p {
- 
-}
-*/
 
 .counter {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -123,26 +127,50 @@ h1 {
 .bookmarks {
   border: 3px solid black;
   border-radius: 20%;
-  padding: 5px 20px;
+  padding: 7px 20px;
 }
 
 .settings {
-  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 10%;
 }
 
-.settings .mode button {
-  cursor: pointer;
-  background-image: url("../images/toggle-off-solid.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+.settings h2 {
+  font-size: 30px;
+}
+
+.settings h3 {
+  font-size: 20px;
+  padding-top: 5%;
+}
+
+.mode {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 5%;
+}
+
+.button {
+  right: 0;
   border: none;
-  width: 5rem;
-  height: 5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.settings .mode button:hover {
-  background-image: url("../images/toggle-on-solid.svg");
-  background-repeat: no-repeat;
+.button:hover {
+  background-color: rgb(3, 6, 8);
+  color: wheat;
 }
 
 .navbar {

@@ -10,7 +10,7 @@
     ></script>
     <title>Profil</title>
   </head>
-  <body>
+  <body data-js="body">
     <header class="header">
       <h1>Profil</h1>
     </header>
@@ -42,7 +42,15 @@
         <h2>Settings</h2>
         <div class="mode">
           <h3>Dark Mode</h3>
-          <button aria-label="toggle mode" onclick=""></button>
+          <div class="button-container">
+            <button
+              class="button button--toggle"
+              aria-label="toggle mode"
+              data-js="toggle-button"
+            >
+              toggle
+            </button>
+          </div>
         </div>
       </section>
 
@@ -63,4 +71,5 @@
       </div>
     </main>
   </body>
+  <script src="./js/index.js"></script>
 </html>
