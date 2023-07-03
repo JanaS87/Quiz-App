@@ -17,71 +17,76 @@
     </header>
 
     <main>
-      <section class="card">
-        <h2 id="Q1" class="card-question">For what stands CSS?</h2>
-        <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
-        <div class="card-answer">
+      <section class="container">
+        <div class="question__card">
+          <h2>For what stands CSS?</h2>
+          <p class="card__answer--hidden">Cascading Stylesheet</p>
           <button>Show Answer</button>
-        </div>
-        <!-- Attribute hidden for invisible text-->
-        <p class="answer" hidden>Cascading Stylesheet</p>
-        <div class="tags">
-          <ul class="tag-list">
-            <li class="tag-list-item">#css</li>
-          </ul>
+          <button class="bookmark">
+            <i class="fa-regular fa-bookmark"></i>
+          </button>
+          <div class="tags">
+            <ul class="tag-list">
+              <li class="tag-list-item">#css</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section class="card">
-        <h2 id="Q2" class="card-question">For what stands HTML?</h2>
-        <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
-        <div class="card-answer">
+      <section class="container">
+        <div class="question__card">
+          <h2>For what stands HTML?</h2>
+          <p class="card__answer--hidden">Hypertext Markup Language</p>
           <button>Show Answer</button>
-        </div>
-        <p class="answer" hidden>Hypertext Markup Language</p>
-        <div class="tags">
-          <ul class="tag-list">
-            <li class="tag-list-item">#html</li>
-          </ul>
+          <button class="bookmark">
+            <i class="fa-regular fa-bookmark"></i>
+          </button>
+          <div class="tags">
+            <ul class="tag-list">
+              <li class="tag-list-item">#html</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section class="card">
-        <h2 id="Q3" class="card-question">What is GitHub?</h2>
-        <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
-        <div class="card-answer">
+      <section class="container">
+        <div class="question__card">
+          <h2>What is GitHub?</h2>
+          <p class="card__answer--hidden">
+            A code hosting platform for version control and collaboration.
+          </p>
           <button>Show Answer</button>
-        </div>
-        <p class="answer" hidden>
-          a code hosting platform for version control and collaboration.
-        </p>
-        <div class="tags">
-          <ul class="tag-list">
-            <li class="tag-list-item">#git</li>
-            <li class="tag-list-item">#github</li>
-          </ul>
+          <button class="bookmark">
+            <i class="fa-regular fa-bookmark"></i>
+          </button>
+          <div class="tags">
+            <ul class="tag-list">
+              <li class="tag-list-item">#git</li>
+              <li class="tag-list-item">#github</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section class="card">
-        <h2 id="Q4" class="card-question">
-          What property flips the axes in flexbox?
-        </h2>
-        <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
-        <div class="card-answer">
+      <section class="container">
+        <div class="question__card">
+          <h2>What property flips the axes in flexbox?</h2>
+          <p class="card__answer--hidden">flex-direction</p>
           <button>Show Answer</button>
-        </div>
-        <p class="answer" hidden>flex-direction</p>
-        <div class="tags">
-          <ul class="tag-list">
-            <li class="tag-list-item">#html</li>
-            <li class="tag-list-item">#css</li>
-            <li class="tag-list-item">#flexbox</li>
-          </ul>
+          <button class="bookmark">
+            <i class="fa-regular fa-bookmark"></i>
+          </button>
+          <div class="tags">
+            <ul class="tag-list">
+              <li class="tag-list-item">#html</li>
+              <li class="tag-list-item">#css</li>
+              <li class="tag-list-item">#flexbox</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <div class="navbar">
+      <!--<div class="navbar">
         <ul class="navbar-item">
           <li class="navbar-link-item">
             <a class="active" href="#Home"><i class="fa fa-home"></i></a>
@@ -93,7 +98,17 @@
             <a href="./profil.html"><i class="fa-solid fa-user"></i></a>
           </li>
         </ul>
-      </div>
+      </div> -->
+
+      <footer class="navigation__bar">
+        <div class="navigation__item">
+          <a href="#Home" class="navigation__active"
+            ><i class="fa fa-home"></i
+          ></a>
+          <a href="bookmarks.html"><i class="fa-solid fa-bookmark"></i></a>
+          <a href="profil.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </footer>
     </main>
   </body>
   <script src="./js/index.js"></script>
