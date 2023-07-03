@@ -198,7 +198,7 @@ h2 {
   color: wheat;
 }
 
-/* Navigation bar */
+/* ---------   Navigation bar ---------  */
 .navigation__bar {
   position: fixed;
   bottom: 0;
@@ -227,11 +227,12 @@ h2 {
   margin: 0 110px;
 }
 
-.navigation__active {
-  background-color: #cd5888;
+.navigation__item a:hover {
+  color: #89c4e1;
 }
 
-.navigation__item a:hover {
+.navigation__active {
+  background-color: #913175;
   color: #913175;
 }
 
