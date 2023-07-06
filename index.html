@@ -20,9 +20,15 @@
       <section class="container">
         <div class="question__card">
           <h2>For what stands CSS?</h2>
-          <p class="card__answer--hidden">Cascading Stylesheet</p>
-          <button>Show Answer</button>
-          <button class="bookmark">
+          <p id="answer1" class="card__answer--hidden">Cascading Stylesheet</p>
+          <button onclick="showAnswer('answer1')" class="answer__button">
+            Show Answer
+          </button>
+          <button
+            class="bookmark"
+            aria-label="active mode"
+            data-js="bookmark-button"
+          >
             <i class="fa-regular fa-bookmark"></i>
           </button>
           <div class="tags">
@@ -36,8 +42,16 @@
       <section class="container">
         <div class="question__card">
           <h2>For what stands HTML?</h2>
-          <p class="card__answer--hidden">Hypertext Markup Language</p>
-          <button>Show Answer</button>
+          <p id="answer2" class="card__answer--hidden">
+            Hypertext Markup Language
+          </p>
+          <button
+            onclick="showAnswer('answer2')"
+            class="answer__button"
+            data-js="answer-button"
+          >
+            Show Answer
+          </button>
           <button class="bookmark">
             <i class="fa-regular fa-bookmark"></i>
           </button>
@@ -52,10 +66,12 @@
       <section class="container">
         <div class="question__card">
           <h2>What is GitHub?</h2>
-          <p class="card__answer--hidden">
+          <p id="answer3" class="card__answer--hidden">
             A code hosting platform for version control and collaboration.
           </p>
-          <button>Show Answer</button>
+          <button onclick="showAnswer('answer3')" class="answer__button">
+            Show Answer
+          </button>
           <button class="bookmark">
             <i class="fa-regular fa-bookmark"></i>
           </button>
@@ -71,8 +87,10 @@
       <section class="container">
         <div class="question__card">
           <h2>What property flips the axes in flexbox?</h2>
-          <p class="card__answer--hidden">flex-direction</p>
-          <button>Show Answer</button>
+          <p id="answer4" class="card__answer--hidden">flex-direction</p>
+          <button onclick="showAnswer('answer4')" class="answer__button">
+            Show Answer
+          </button>
           <button class="bookmark">
             <i class="fa-regular fa-bookmark"></i>
           </button>
