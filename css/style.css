@@ -280,6 +280,31 @@ input[type="text"] {
   height: 40px;
 }
 
+.submit {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 5%;
+}
+
+.submit__button {
+  display: inline-block;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 1.125em;
+  height: 30px;
+  background-color: #913175;
+  color: #f7f7f7;
+  padding: 0 20px;
+}
+
+.submit__button:hover {
+  background-color: #20262e;
+}
+
 /* ---------   Navigation bar ---------  */
 .navigation__bar {
   position: fixed;
