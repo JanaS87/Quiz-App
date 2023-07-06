@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/bf2cb53385.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home</title>
+  </head>
+
+  <body data-js="body">
+    <header class="header">
+      <h1>Add new question</h1>
+    </header>
+
+    <main>
+      <form class="form">
+        <div class="question__area">
+          <label for="question-area">Your question:</label>
+          <textarea
+            id="question-area"
+            name="question-area"
+            rows="5"
+            cols="10"
+            maxlength="150"
+          >
+          </textarea>
+        </div>
+
+        <div class="answer__area">
+          <label for="answer-area">Your answer:</label>
+          <textarea
+            id="answer-area"
+            name="answer-area"
+            rows="5"
+            cols="10"
+            maxlength="150"
+          >
+          </textarea>
+        </div>
+
+        <div class="tag">
+          <label for="tag-area">#Tag</label>
+          <input type="text" id="tag-area" name="tag-area" />
+        </div>
+
+        <div class="submit">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <!--<div class="navbar">
+        <ul class="navbar-item">
+          <li class="navbar-link-item">
+            <a class="active" href="#Home"><i class="fa fa-home"></i></a>
+          </li>
+          <li>
+            <a href="./bookmarks.html"><i class="fa-solid fa-bookmark"></i></a>
+          </li>
+          <li>
+            <a href="./profil.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </div> -->
+
+      <footer class="navigation__bar">
+        <div class="navigation__item">
+          <a href="index.html"><i class="fa fa-home"></i></a>
+          <a href="bookmarks.html"><i class="fa-solid fa-bookmark"></i></a>
+          <a href="#form" class="navigation__active"
+            ><i class="fa-solid fa-square-plus"></i
+          ></a>
+          <a href="profil.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </footer>
+    </main>
+  </body>
+  <script src="./js/form.js"></script>
+</html>
