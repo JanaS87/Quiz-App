@@ -10,16 +10,16 @@
     ></script>
     <title>Profil</title>
   </head>
-  <body>
+  <body data-js="body">
     <header class="header">
       <h1>Profil</h1>
     </header>
     <main>
       <section class="user">
-        <div class="user-profil">
+        <div class="user__profil">
           <img src="./images/manfred.jpg" width="220" height="140" />
         </div>
-        <div class="user-name">
+        <div class="user__name">
           <h2>Manfred Doe</h2>
         </div>
       </section>
@@ -42,25 +42,28 @@
         <h2>Settings</h2>
         <div class="mode">
           <h3>Dark Mode</h3>
-          <button aria-label="toggle mode" onclick=""></button>
+          <div class="button-container">
+            <button
+              class="button button--toggle"
+              aria-label="toggle mode"
+              data-js="toggle-button"
+            >
+              toggle
+            </button>
+          </div>
         </div>
       </section>
 
-      <div class="navbar">
-        <ul class="navbar-item">
-          <li class="navbar-link-item">
-            <a href="./index.html"><i class="fa fa-home"></i></a>
-          </li>
-          <li>
-            <a href="./bookmarks.html"><i class="fa-solid fa-bookmark"></i></a>
-          </li>
-          <li>
-            <a class="active" href="#Profil"
-              ><i class="fa-solid fa-user"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
+      <footer class="navigation__bar">
+        <div class="navigation__item">
+          <a href="index.html"><i class="fa fa-home"></i></a>
+          <a href="bookmarks.html"><i class="fa-solid fa-bookmark"></i></a>
+          <a href="#Profil" class="navigation__active"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+        </div>
+      </footer>
     </main>
   </body>
+  <script src="./js/index.js"></script>
 </html>
