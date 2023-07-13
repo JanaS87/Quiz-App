@@ -18,6 +18,7 @@ answerButton.addEventListener("click", () => {
     answerButton.textContent == "Show Answer"
   ) {
     cardAnswer.style.display = "block";
+    cardAnswer.style.backgroundColor = "#EEEEEE";
     answerButton.textContent = "Hide Answer";
   } else {
     cardAnswer.style.display = "none";
